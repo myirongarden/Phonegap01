@@ -31,8 +31,7 @@
         <title>AppsFrog</title>
     </head>
     <body>
-    <audio src="sounds/Cow_Moo_01.wav" id="moo"></audio>
-	<audio src="sounds/Frog_Croak.wav" id="sound"></audio>
+    <audio src="res/sounds/Cow_Moo_01.wav" id="moo"></audio>
 
 <div data-role="page" id="page">
 	<div data-role="header">
@@ -62,7 +61,7 @@
 	<div data-role="content">	
 		<p>Hvor er frøen</p>
 		<p><img src="images/cow.jpg" width="257" height="196" onclick='document.getElementById("moo").play()'> 
-        <img src="images/fatFrog.jpg" width="259" height="194" onmousedown="right1()"></p>
+        <img src="images/fatFrog.jpg" width="259" height="194" id="playaudio"></p>
       <div class="right1" id="go"><a href="#page3">Det var flot - næste ?</a></div>
     </div>
 </div>
