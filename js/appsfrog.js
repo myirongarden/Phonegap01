@@ -1,5 +1,5 @@
 function frogevent() {
-        playAudio('../res/sounds/Frog_Croak.wav');
+        playAudio('/android_asset/Frog_Croak.wav');
 		
 		$('#go').animate({"opacity": "1"}, "fast");
 
