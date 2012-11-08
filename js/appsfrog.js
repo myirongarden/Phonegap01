@@ -1,18 +1,17 @@
-
-
-    $("#imgfrog").live('tap', function() {
-        // Note: two ways to access media file: web and local file        
-
-  
-        
-        // local (on device): copy file to project's /assets folder:
-        // var src = '/android_asset/spittinggames.m4a';
-        
+function frogevent() {
         playAudio('../res/sounds/Frog_Croak.wav');
 		
 		$('#go').animate({"opacity": "1"}, "fast");
-		
-    });
+
+}
+
+function init() {
+
+
+      
+
+document.getElementById("imgfrog").addEventListener("click", frogevent, false);
+
 
     $("#pauseaudio").live('tap', function() {
         pauseAudio();
@@ -23,7 +22,7 @@
     });
 
 
-
+}
 
 
 // Audio player
