@@ -1,13 +1,11 @@
 function init() {
 
 
-
-
 }
 
 
 function frogevent() {
-        playAudio("Frog_Croak.wav");
+        playAudio("sounds/Frog_Croak.wav");
 		
 		$('#go').animate({"opacity": "1"}, "fast");
 
@@ -17,7 +15,6 @@ function frogevent() {
 // Audio player
         //
         var my_media = null;
-        var mediaTimer = null;
 
         function playAudio(src) {
             if (device.platform == 'Android') {
