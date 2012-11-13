@@ -1,7 +1,6 @@
 function init() {
 
 
-	document.getElementById("imgfrog").addEventListener("onclick", frogevent, false);
 
 		alert("init");
 
@@ -9,11 +8,11 @@ function init() {
 
 
 function frogevent() {
-        playAudio('Frog_Croak.wav');
+        playAudio("Frog_Croak.wav");
 		
 		$('#go').animate({"opacity": "1"}, "fast");
 		
-		alert("dav");
+		alert("Frø");
 
 }
 

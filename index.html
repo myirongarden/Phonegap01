@@ -41,8 +41,8 @@
         <div class="app">
             <h1>Claus test app</h1>
             <div id="deviceready">
-                <h2 class="status pending blink">Connecting to Device</p>
-                <h2 class="status complete blink hide"><a href="#page2">START</a></p>
+                <h2 class="status pending blink">Connecting to Device</h2>
+                <h2 class="status complete blink hide"><a href="#page2">START</a></h2>
             </div>
         </div>			
 		
@@ -59,8 +59,8 @@
 <div data-role="page" id="page2">
 	<div data-role="content">	
 		<p>Hvor er frøen</p>
-		<p><img src="images/cow.jpg" width="257" height="196" onclick="playAudio("/android_asset/www/Cow_Moo_01.wav");"> 
-        <img src="images/fatFrog.jpg" width="259" height="194" id="imgfrog"></p>
+		<p><img src="images/cow.jpg" width="257" height="196" onclick="playAudio("Cow_Moo_01.wav");"> 
+        <img src="images/fatFrog.jpg" width="259" height="194" id="imgfrog" onmousedown="frogevent()"></p>
       <div class="right1" id="go"><a href="#page3">Det var flot - næste ?</a></div>
     </div>
 </div>
