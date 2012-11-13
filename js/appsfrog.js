@@ -2,7 +2,6 @@ function init() {
 
 
 
-		alert("init");
 
 }
 
@@ -11,8 +10,6 @@ function frogevent() {
         playAudio("Frog_Croak.wav");
 		
 		$('#go').animate({"opacity": "1"}, "fast");
-		
-		alert("Frø");
 
 }
 
@@ -37,7 +34,6 @@ function frogevent() {
         }
 
         function error_error(e) {
-            alert('great error');
             alert(e.message);
         }
 
