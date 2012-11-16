@@ -5,7 +5,7 @@ function initAppsFrog() {
 var watchID = null;
 
 function startWatch() {
-
+	alert('compass');
 	var options = { frequency: 1000 };
 
 	watchID = navigator.compass.watchHeading(onSuccess, onError, options);
