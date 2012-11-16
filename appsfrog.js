@@ -26,7 +26,7 @@ function onSuccess(heading) {
 	var element = document.getElementById('test');
     element.innerHTML = 'Heading: ' + heading.magneticHeading;
 	
-	var cssheading = '-webkit-transform:rotate(' + heading.magneticHeading + 'deg);';
+	var cssheading = '-webkit-transform:rotate(' + 360-heading.magneticHeading + 'deg);';
 	
 	//alert (cssheading);
 	
