@@ -87,12 +87,11 @@ h1 {
 
 .event.listening {
     background-color:#333333;
-    xdisplay:block;
-	display:none;
+    display:block;
 }
 
 .event.received {
-    xdisplay:none;
+    display:none;
 }
 
 @keyframes fade {
