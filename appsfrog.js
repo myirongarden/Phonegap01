@@ -11,8 +11,11 @@ function startWatch() {
 	watchID = navigator.compass.watchHeading(onSuccess, onError, options);
 }
 function onSuccess(heading) {
-	var compassElement = document.getElementById('compass');
 	
+	var element = document.getElementById('test');
+    element.innerHTML = 'Heading: ' + heading.magneticHeading;
+	
+	var compassElement = document.getElementById('compassrose');
 	compassElement.setAttribute('style', 'rotation:'+heading+'deg;');
 	
 }
