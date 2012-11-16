@@ -30,7 +30,7 @@ function onSuccess(heading) {
 	
 	var cssheading = '-webkit-transform:rotate(' + trueheading + 'deg);';
 	
-	alert (trueheading);
+	//alert (trueheading);
 	
 	var compassElement = document.getElementById('compassrose');
 	compassElement.setAttribute('style', cssheading);
