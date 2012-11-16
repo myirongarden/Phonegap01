@@ -1,8 +1,21 @@
-function initAppsFrog() {
+var watchID = null;
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+// PhoneGap is ready
+//
+function onDeviceReady() {
+	
+	var listeningElement = document.getElementById('deviceready');
+    listeningElement.setAttribute('style', 'display:none;');
+	var receivedElement = document.getElementById('go');
+    receivedElement.setAttribute('style', 'display:block;');
+
+	alert('init');
+	
+	startWatch();
 }
 
-
-var watchID = null;
 
 function startWatch() {
 	alert('compass');
