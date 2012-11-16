@@ -6,9 +6,11 @@ a {
 	background-color:#9C6;
 	border-radius: 6px;
 	padding: 0.5em;
+	margin: 1em;
+	color:#FFF;
 }
 .button a {
-	color:#FFF;
+	
 }
 
 #menutab {

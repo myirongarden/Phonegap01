@@ -16,7 +16,7 @@ function onSuccess(heading) {
     element.innerHTML = 'Heading: ' + heading.magneticHeading;
 	
 	var compassElement = document.getElementById('compassrose');
-	compassElement.setAttribute('style', 'rotation:'+heading+'deg;');
+	compassElement.setAttribute('style', 'rotation:'+heading.magneticHeading+'deg;');
 	
 }
 
