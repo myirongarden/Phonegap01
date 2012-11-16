@@ -26,9 +26,9 @@ function onSuccess(heading) {
 	var element = document.getElementById('test');
     element.innerHTML = 'Heading: ' + heading.magneticHeading;
 	
-	var cssheading = 'rotation:' + heading.magneticHeading + 'deg;';
+	var cssheading = '-webkit-transform:rotate(' + heading.magneticHeading + 'deg);';
 	
-	alert (cssheading);
+	//alert (cssheading);
 	
 	var compassElement = document.getElementById('compassrose');
 	compassElement.setAttribute('style', cssheading);
