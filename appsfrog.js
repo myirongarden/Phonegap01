@@ -10,15 +10,13 @@ function onDeviceReady() {
     listeningElement.setAttribute('style', 'display:none;');
 	var receivedElement = document.getElementById('go');
     receivedElement.setAttribute('style', 'display:block;');
-
-	alert('init');
 	
 	startWatch();
 }
 
 
 function startWatch() {
-	alert('compass');
+	
 	var options = { frequency: 1000 };
 
 	watchID = navigator.compass.watchHeading(onSuccess, onError, options);
@@ -28,8 +26,12 @@ function onSuccess(heading) {
 	var element = document.getElementById('test');
     element.innerHTML = 'Heading: ' + heading.magneticHeading;
 	
+	var cssheading = 'rotation:' + heading.magneticHeading + 'deg;';
+	
+	alert (cssheading);
+	
 	var compassElement = document.getElementById('compassrose');
-	compassElement.setAttribute('style', 'rotation:'+heading.magneticHeading+'deg;');
+	compassElement.setAttribute('style', cssheading);
 	
 }
 
