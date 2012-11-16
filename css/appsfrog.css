@@ -1,0 +1,24 @@
+a {
+	text-decoration:none;
+	}
+
+.button {
+	background-color:#9C6;
+	border-radius: 6px;
+	padding: 0.5em;
+}
+.button a {
+	color:#FFF;
+}
+
+#menutab {
+	border-radius: 6px;
+	position:absolute;
+	bottom:0px;
+	background-color:#000;	
+}
+#compasrose {
+	position:relative;
+	rotation-point:50% 50%;
+	rotation:180deg;
+}
